@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}
+Help
+{% endblock title %}
+{% block body %}
+<div class="container-fluid my-3 " style="height:350px;width:100;display:flex" >
+    <img src="static/images/cbg1.jpg" class="d-block w-100 " style="border-radius: 2rem;" alt="..." />
+</div>
+<div class="container mt-5">
+    <h1>Welcome to the Help Center</h1>
+    <p>This is where you can find assistance with our products and services.</p>
+    <div class="alert alert-info" role="alert">
+      If you need immediate assistance, please call our support helpline at 1-800-123-4567.
+    </div>
+    <h2>Frequently Asked Questions</h2>
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Question 1: What are your business hours?
+            </button>
+          </h2>
+        </div>
+
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            Our business hours are Monday to Friday, 9:00 AM to 5:00 PM EST.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Question 2: How can I reset my password?
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            You can reset your password by visiting our website and clicking on the "Forgot Password" link on the login page.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock body %}
